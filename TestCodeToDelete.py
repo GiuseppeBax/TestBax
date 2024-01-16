@@ -31,12 +31,6 @@ try:
     something()
 except Exception as e:
     raise e
-	
-# Duplicate code
-try:
-    something()
-except Exception as e:
-    raise e
 
 # Incorrect usage of raising Exception/BaseException
 raise Exception("An error occurred")
@@ -61,3 +55,26 @@ try:
 except SystemExit as e:
     print("Caught SystemExit")
     raise e
+
+# Duplicate code?
+try:
+    something()
+except Exception as e:
+    raise e
+
+# Refactored code to eliminate duplication
+def calculate_area(shape, *args):
+    if shape == "rectangle":
+        return args[0] * args[1]
+    elif shape == "circle":
+        return 3.14 * args[0] * args[0]
+    else:
+        raise ValueError("Unsupported shape")
+
+def calculate_circumference(shape, *args):
+    if shape == "rectangle":
+        return 2 * (args[0] + args[1])
+    elif shape == "circle":
+        return 2 * 3.14 * args[0]
+    else:
+        raise ValueError("Unsupported shape")
