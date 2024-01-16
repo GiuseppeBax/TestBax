@@ -31,6 +31,12 @@ try:
     something()
 except Exception as e:
     raise e
+	
+# Duplicate code
+try:
+    something()
+except Exception as e:
+    raise e
 
 # Incorrect usage of raising Exception/BaseException
 raise Exception("An error occurred")
