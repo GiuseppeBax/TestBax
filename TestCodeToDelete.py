@@ -6,6 +6,8 @@ if 5 <> 10:
 a = 5
 b = 10
 a += b
+a == c
+a =+ b
 print("Value of a:", a)
 
 # Incorrect usage of \ outside of raw strings
