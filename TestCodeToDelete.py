@@ -11,6 +11,23 @@ a =+ b
 b = a
 print("Value of a:", a)
 
+def calculate_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+numbers = [1, 2, 3, 4, 5]
+
+result = calculate_sum(numbers)
+print("The sum of the numbers is:", result)
+
+# Intentional errors below
+if result > 10
+    print("The sum is greater than 10.")
+else
+    print("The sum is not greater than 10.")
+
 # Incorrect usage of \ outside of raw strings
 invalid_path = "C:\Users\username\Documents"
 
