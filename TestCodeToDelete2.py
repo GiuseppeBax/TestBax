@@ -21,7 +21,6 @@ def main():
     product_result = calculator.multiply(4, 7)
     print(f"Product: {product_result}")
 
+
 if __name__ == "__main__":
-
-
     main()
