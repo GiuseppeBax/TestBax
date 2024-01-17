@@ -8,6 +8,7 @@ b = 10
 a += b
 a == c
 a =+ b
+b = a
 print("Value of a:", a)
 
 # Incorrect usage of \ outside of raw strings
